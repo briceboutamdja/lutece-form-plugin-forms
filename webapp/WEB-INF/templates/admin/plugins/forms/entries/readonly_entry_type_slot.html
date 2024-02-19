@@ -5,7 +5,7 @@
 			<#list list_responses?chunk(2) as row>
 				<#assign beginHour = row[0].toStringValueResponse>
 				<#assign endHour = row[1].toStringValueResponse>
-				<li>Creneau de ${beginHour} à ${endHour}</li>
+				<li>#i18n{forms.message.slot.determinant} ${beginHour} #i18n{forms.message.slot.preposition} ${endHour}</li>
 			</#list>
 		</ul>
 	</@columns>

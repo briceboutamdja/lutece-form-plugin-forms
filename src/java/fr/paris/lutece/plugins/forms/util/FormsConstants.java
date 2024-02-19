@@ -103,7 +103,6 @@ public final class FormsConstants
     public static final String MARK_REGEX_URL = "regex_url";
     public static final String MARK_UPLOAD_HANDLER = "uploadHandler";
     public static final String MARK_DEFAULT_VALUE_WORKGROUP_KEY = "workgroup_key_default_value";
-    public static final String MARK_HELP_MESSAGE = "help_message";
 
     // Parameters
     public static final String PARAMETER_PAGE = "page";
@@ -190,10 +189,8 @@ public final class FormsConstants
     public static final String MESSAGE_LOAD_BACKUP = "forms.message.view.loadBackUp";
     public static final String MESSAGE_SUMMARY_TITLE = "forms.summary.title";
     public static final String MESSAGE_ERROR_NO_STEP = "forms.error.form.noStep";
-    public static final String MESSAGE_VIEW_GROUP_HELP = "forms.view.group.help.message";
-    public static final String MESSAGE_ERROR_CRENEAUX = "forms.message.error.creneaux";
-    public static final String MESSAGE_ERROR_CRENEAUX_IMPOSSIBLE = "forms.message.error.creneauxImpossible";
 
+    
     // Jsp
     public static final String JSP_MANAGE_STEPS = "jsp/admin/plugins/forms/ManageSteps.jsp";
     public static final String JSP_MANAGE_FORMS = "jsp/admin/plugins/forms/ManageForms.jsp";

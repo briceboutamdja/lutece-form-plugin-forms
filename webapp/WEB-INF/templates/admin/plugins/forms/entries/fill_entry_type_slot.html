@@ -13,19 +13,19 @@
             <div class="slot-entry">
                 <#if list_responses?has_content>
                     <#list list_responses?chunk(2) as row>
-                        <label>De</label>
-                        <input type="time" class="<#if hasError> is-invalid</#if>" id="${idName}_debut" name="${idName}_debut" value="${row[0].toStringValueResponse!}" <#if entry.mandatory> required</#if> />
-                        <label>à</label>
-                        <input type="time" class="<#if hasError> is-invalid</#if>" id="${idName}_fin" name="${idName}_fin" value="${row[1].toStringValueResponse!}" <#if entry.mandatory> required</#if> />
+                        <label>#i18n{forms.message.slot.determinant}</label>
+                        <input type="time" class="<#if hasError> is-invalid</#if>" id="${idName}_begin" name="${idName}_begin" value="${row[0].toStringValueResponse!}" <#if entry.mandatory> required</#if> />
+                        <label>#i18n{forms.message.slot.preposition}</label>
+                        <input type="time" class="<#if hasError> is-invalid</#if>" id="${idName}_end" name="${idName}_end" value="${row[1].toStringValueResponse!}" <#if entry.mandatory> required</#if> />
                     </#list>
                     <#if hasError>
                         <div class="invalid-feedback"><#if error.mandatoryError>#i18n{forms.message.mandatory.entry}<#else>${error.errorMessage}</#if></div>
                     </#if>
                 <#else>
-                    <label>De</label>
-                    <input type="time" class="<#if hasError> is-invalid</#if>" id="${idName}_debut" name="${idName}_debut" min="00:00" max="23:59" <#if entry.mandatory> required</#if> />
-                    <label>à</label>
-                    <input type="time" class="<#if hasError> is-invalid</#if>" id="${idName}_fin" name="${idName}_fin" min="00:00" max="23:59" <#if entry.mandatory> required</#if> />
+                    <label>#i18n{forms.message.slot.determinant}</label>
+                    <input type="time" class="<#if hasError> is-invalid</#if>" id="${idName}_begin" name="${idName}_begin" min="00:00" max="23:59" <#if entry.mandatory> required</#if> />
+                    <label>#i18n{forms.message.slot.preposition}</label>
+                    <input type="time" class="<#if hasError> is-invalid</#if>" id="${idName}_end" name="${idName}_end" min="00:00" max="23:59" <#if entry.mandatory> required</#if> />
                     <#if hasError>
                         <div class="invalid-feedback"><#if error.mandatoryError>#i18n{forms.message.mandatory.entry}<#else>${error.errorMessage}</#if></div>
                     </#if>
