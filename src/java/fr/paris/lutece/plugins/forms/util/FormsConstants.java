@@ -191,8 +191,8 @@ public final class FormsConstants
     public static final String MESSAGE_SUMMARY_TITLE = "forms.summary.title";
     public static final String MESSAGE_ERROR_NO_STEP = "forms.error.form.noStep";
     public static final String MESSAGE_VIEW_GROUP_HELP = "forms.view.group.help.message";
-
-
+    public static final String MESSAGE_ERROR_CRENEAUX = "forms.message.error.creneaux";
+    public static final String MESSAGE_ERROR_CRENEAUX_IMPOSSIBLE = "forms.message.error.creneauxImpossible";
 
     // Jsp
     public static final String JSP_MANAGE_STEPS = "jsp/admin/plugins/forms/ManageSteps.jsp";
